@@ -16,7 +16,7 @@ export default function Home() {
         </div>
 
         <p>
-        The first test designed to gain unbiased clarity on your actions and behaviors, understanding the 'why' behind them. Uncover the true you.
+        The first test designed to gain unbiased clarity on your actions and behaviors, understanding the &aposwhy&apos behind them. Uncover the true you.
         </p>
         <Link href="/quizz">
           <button className={styles.ctaButton}>Start your journey now</button>
