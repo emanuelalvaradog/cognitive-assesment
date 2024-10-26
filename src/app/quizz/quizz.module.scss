@@ -1,0 +1,210 @@
+.container {
+  width: 100%;
+  height: 100vh;
+  padding: 0 10rem;
+  overflow: hidden;
+}
+
+.header {
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  text-align: start;
+  margin-bottom: 30px;
+
+  h1 {
+    font-style: italic;
+    font-family: "Libre Caslon Text", serif;
+    font-size: 2.8rem;
+    font-weight: 400;
+    width: 5%;
+    line-height: .8;
+    word-spacing: -5rem;
+  }
+}
+
+// Layer 3 (Innermost, Orange)
+.layer3 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 75vh; // Smallest size for inner layer
+  height: 75vh;
+  background-color: #91CBFF;
+  border-radius: 50%;
+  opacity: 0.5;
+  filter: blur(80px); // Adjusted blur
+  z-index: -1; // Bring to front among background layers
+}
+
+.questionCard {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 1; // Ensures content is above the gradient circle
+
+  height: 80vh;
+
+
+  // Layer 1 (Outermost, Blue)
+  &::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60vh; // Largest size for outer layer
+    height: 60vh;
+    background-color: #D986FF;
+    border-radius: 50%;
+    opacity: 0.4;
+    filter: blur(100px); // Slightly larger blur
+    z-index: -3;
+  }
+
+  // Layer 2 (Middle, Purple)
+  &::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 35vh; // Middle size for purple layer
+    height: 35vh;
+    background-color: #FFCCA5;
+    border-radius: 50%;
+    opacity: 0.7;
+    filter: blur(80px); // Intermediate blur
+    z-index: -2;
+  }
+
+
+  > p {
+    font-size: 2rem;
+    border: 1px solid #232323;
+    border-radius: 50rem;
+    padding: .4rem 1rem;
+    margin-bottom: 6rem;
+  }
+
+  h3 {
+    width: 40%;
+    font-weight: 600;
+    font-style: italic;
+    text-align: center;
+    font-family: "Libre Caslon Text", serif;
+    font-size: 5rem;
+    line-height: 5.4rem;
+    margin-bottom: 4rem;
+  }
+}
+
+
+.sliderValue {
+  margin-top: 4rem;
+  font-size: 4rem;
+  font-family: "Libre Caslon Text", serif;
+  font-style: italic;
+  color: #232323;
+}
+
+.sliderContainer {
+  margin-top: 4rem;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+}
+
+.slider {
+  -webkit-appearance: none;
+  height: 2.4rem;
+  background: transparent;
+  border: 1px solid #232323;
+  border-radius: 100rem;
+  outline: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+
+
+  &::-webkit-slider-runnable-track {
+    border-radius: 10px;
+    width: 100%;
+    height: 30px;
+    border-radius: 10px;
+    background: transparent
+  }
+
+  &::-moz-range-track {
+    border-radius: 10px;
+    width: 100%;
+    height: 30px;
+    border-radius: 10px;
+    background: transparent
+  }
+
+  // Thumb styling (the draggable circle)
+  &::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 30px;
+    height: 30px;
+    background-color: #232323; // Thumb color
+    border-radius: 50%;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: transform 0.2s ease;
+
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+
+  &::-moz-range-thumb {
+    width: 30px;
+    height: 30px;
+    background-color: #232323;
+    border-radius: 50%;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: transform 0.2s ease;
+
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+}
+
+.sliderLabels {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 5px;
+  font-size: 1.4rem;
+  color: #232323;
+}
+
+.arrowButton {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  cursor: pointer;
+
+  &:first-of-type {
+    left: 2rem; // Position for the left (previous) arrow
+  }
+  
+  &:last-of-type {
+    right: 2rem; // Position for the right (next) arrow
+  }
+
+  svg {
+    width: 4rem;
+    height: 4rem;
+  }
+}
