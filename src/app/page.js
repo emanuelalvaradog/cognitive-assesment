@@ -26,50 +26,50 @@ export default function Home() {
       <section className={styles.reviewsContainer}>
         <div className={styles.reviewBox}>
           <p>
-            "The insights I gained from this assessment were eye-opening. It helped me
-            understand my strengths in both personal and professional life."
+            &quotThe insights I gained from this assessment were eye-opening. It helped me
+            understand my strengths in both personal and professional life.&quot
           </p>
         </div>
         <div className={styles.reviewBox}>
           <p>
-            "This assessment provided a deep understanding of my personality traits. It
-            guided my career path and relationships."
+            &quotThis assessment provided a deep understanding of my personality traits. It
+            guided my career path and relationships.&quot
           </p>
         </div>
         <div className={styles.reviewBox}>
           <p>
-            "The insights I gained from this assessment were eye-opening. It helped me
-            understand my strengths in both personal and professional life."
+            &quotThe insights I gained from this assessment were eye-opening. It helped me
+            understand my strengths in both personal and professional life.&quot
           </p>
         </div>
         <div className={styles.reviewBox}>
           <p>
-            "This assessment provided a deep understanding of my personality traits. It
-            guided my career path and relationships."
+            &quotThis assessment provided a deep understanding of my personality traits. It
+            guided my career path and relationships.&quot
           </p>
         </div>
         <div className={styles.reviewBox}>
           <p>
-            "The insights I gained from this assessment were eye-opening. It helped me
-            understand my strengths in both personal and professional life."
+            &quotThe insights I gained from this assessment were eye-opening. It helped me
+            understand my strengths in both personal and professional life.&quot
           </p>
         </div>
         <div className={styles.reviewBox}>
           <p>
-            "This assessment provided a deep understanding of my personality traits. It
-            guided my career path and relationships."
+            &quotThis assessment provided a deep understanding of my personality traits. It
+            guided my career path and relationships.&quot
           </p>
         </div>
         <div className={styles.reviewBox}>
           <p>
-            "The insights I gained from this assessment were eye-opening. It helped me
-            understand my strengths in both personal and professional life."
+            &quotThe insights I gained from this assessment were eye-opening. It helped me
+            understand my strengths in both personal and professional life.&quot
           </p>
         </div>
         <div className={styles.reviewBox}>
           <p>
-            "This assessment provided a deep understanding of my personality traits. It
-            guided my career path and relationships."
+            &quotThis assessment provided a deep understanding of my personality traits. It
+            guided my career path and relationships.&quot
           </p>
         </div>        
       </section>
