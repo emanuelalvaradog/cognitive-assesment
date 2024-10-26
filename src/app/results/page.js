@@ -3,6 +3,7 @@
 import { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import styles from './results.module.scss';
+import Link from 'next/link';
 
 export default function Results() {
   const router = useRouter();
